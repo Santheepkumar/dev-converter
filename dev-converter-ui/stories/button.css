@@ -8,7 +8,6 @@
   line-height: 1;
 }
 .storybook-button--primary {
-  @apply mt-10;
   color: white;
   background-color: #1ea7fd;
 }
