@@ -1,6 +1,6 @@
 import React from "react";
 import TextArea from "../components/common/TextArea";
-import "../styles/globals.css"
+import "../styles/globals.css";
 
 export default {
   title: "Common/TextArea",
