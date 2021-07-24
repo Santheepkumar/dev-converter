@@ -67,7 +67,6 @@ export default function App() {
 
   return (
     <>
-      <div id='emberrr' />
       <div>
         <label htmlFor=''>Capitalize</label>
         <select
@@ -81,7 +80,7 @@ export default function App() {
             });
           }}>
           {FUNCS_AND_LABELS.map((obj) => (
-            <option value={obj.functionName}> {obj.label}</option>
+            <option key={obj.functionName} value={obj.functionName}> {obj.label}</option>
           ))}
         </select>
       </div>

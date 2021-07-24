@@ -19,5 +19,35 @@ a {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-green-600;
+  /* border-radius: 100vh; */
+  /* border: 3px solid #edf2f7; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-800;
+}
+
+textarea {
+  resize: both;
+  max-height:30rem;
+  max-width: 50rem
+}
+
+::-webkit-resizer {
+  @apply bg-green-600 rounded-lg animate-pulse;
+}

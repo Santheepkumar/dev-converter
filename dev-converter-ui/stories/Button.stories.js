@@ -9,5 +9,9 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Copy = Template.bind({});
+Copy.args = {};
+export const Copied = Template.bind({});
+Copied.args = {
+  copied: true,
+};

@@ -9,7 +9,8 @@ function ConverterOptions() {
       group
       bg-gray-800
       border
-      p-2
+      px-4
+      py-1.5
       border-gray-200
       rounded-md
       inline-flex
@@ -25,7 +26,7 @@ function ConverterOptions() {
 
           <svg
             className='
-            animate-spin
+            animate-bounce
         text-gray-400
         ml-2
         h-5
@@ -40,9 +41,9 @@ function ConverterOptions() {
             fill='currentColor'
             aria-hidden='true'>
             <path
-              fill-rule='evenodd'
+              fillRule='evenodd'
               d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-              clip-rule='evenodd'
+              clipRule='evenodd'
             />
           </svg>
         </button>
@@ -101,7 +102,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -113,9 +114,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>
@@ -150,7 +151,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -162,9 +163,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>
@@ -198,7 +199,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -210,9 +211,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>
@@ -246,7 +247,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -258,9 +259,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>
@@ -294,7 +295,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -306,9 +307,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>
@@ -343,7 +344,7 @@ function ConverterOptions() {
               h-10
               w-10
               rounded-md
-              bg-indigo-500
+              bg-brand-800
               text-white
               sm:h-12 sm:w-12
             '>
@@ -355,9 +356,9 @@ function ConverterOptions() {
                   stroke='currentColor'
                   aria-hidden='true'>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                   />
                 </svg>

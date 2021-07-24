@@ -1,7 +1,7 @@
 function TextArea() {
   return (
     <div>
-      <div className='text-md mb-4 text-gray-200'>
+      <div className='text-xl mb-4 text-gray-200'>
         <label>Converter Name</label>
       </div>
       <textarea
