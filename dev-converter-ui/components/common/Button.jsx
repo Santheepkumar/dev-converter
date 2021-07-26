@@ -1,0 +1,23 @@
+function Button(props) {
+  return (
+    <div {...props}>
+      <button className=' bg-gray-800 px-2.5 py-2 border border-gray-400 rounded-md flex space-x-1 hover:bg-white text-white text-xs hover:text-black'>
+        <svg
+          width='14'
+          height='14'
+          viewBox='0 0 24 24'
+          fill='currentColor'
+          stroke='currentColor'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+          className='mr-2 stroke-current text-gray-400 animate-pulse'>
+          <rect x='9' y='9' width='13' height='13' rx='2' ry='2'></rect>
+          <path d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'></path>
+        </svg>
+        {props.copied ? "Copied" : "Copy"}
+      </button>
+    </div>
+  );
+}
+
+export default Button;
