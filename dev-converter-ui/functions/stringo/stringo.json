@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Capitalize",
+    "functionName": "toCapitalize",
+    "fieldType": "input"
+  },
+  {
+    "label": "Stringify",
+    "functionName": "stringyfy",
+    "fieldType": "textArea"
+  },
+  {
+    "label": "Lowercase",
+    "functionName": "toSmallCase",
+    "fieldType": "input"
+  }
+]
