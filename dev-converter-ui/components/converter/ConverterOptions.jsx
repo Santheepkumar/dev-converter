@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { getColorByKey } from "../../utils/color.util"
 
 function ConverterOptions({ converters, setCC, currConverter }) {
   const [show, setShow] = useState(false)
@@ -14,6 +15,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
       border
       px-4
       py-1.5
+      
       border-gray-200
       rounded-md
       inline-flex
@@ -86,7 +88,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
           lg:grid-cols-2
         "
             >
-              {converters.map(con => (
+              {converters.map((con, key) => (
                 <a
                   key={con.functionName}
                   href="#"
@@ -112,13 +114,15 @@ function ConverterOptions({ converters, setCC, currConverter }) {
               h-10
               w-10
               rounded-md
-              bg-brand-800
+              
               text-white
               sm:h-12 sm:w-12
             "
-            
+                    style={{
+                      backgroundColor: getColorByKey(key)
+                    }}
                   >
-                    {con.label.slice(0, 1)}
+                    <div className="text-2xl">{con.label.slice(0, 1)}</div>
                   </div>
                   <div className="ml-4">
                     <p className="text-base font-medium text-white">

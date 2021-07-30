@@ -12,16 +12,16 @@ function Home({ collections }) {
           {collections.map(({ short, label, path }, key) => (
             <Link href={path}>
               <a className="w-1/3 flex justify-center">
-                <div className="flex hover:bg-gray-700 border rounded-xl border-gray-600 w-48">
+                <div className="flex hover:bg-gray-700 border rounded-xl border-gray-600 w-72">
                   <h1
-                    className=" px-4 py-3 text-white bg rounded-xl  text-2xl"
+                    className="p-5 text-white bg rounded-xl  text-4xl"
                     style={{
                       backgroundColor: getColorByKey(key)
                     }}
                   >
                     {short}
                   </h1>
-                  <h1 className=" p-2 mt-2 text-gray-50 ">{label}</h1>
+                  <h1 className="mt-7 ml-6   text-gray-50 ">{label}</h1>
                 </div>
               </a>
             </Link>
