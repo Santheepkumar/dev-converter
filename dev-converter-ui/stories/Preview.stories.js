@@ -54,7 +54,7 @@ Normal.args = {
 
 export const Big = Template.bind({});
 Big.args = {
-  content: content2,
+  content: content2,    
 };
 
 export const Small = Template.bind({});

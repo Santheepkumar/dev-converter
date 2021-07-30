@@ -1,5 +1,5 @@
 import React from "react";
-import ConverterOptions from "../components/common/ConverterOptions";
+import ConverterOptions from "../components/converter/ConverterOptions";
 import "../styles/globals.css";
 
 export default {
@@ -10,4 +10,11 @@ export default {
 const Template = (args) => <ConverterOptions {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  converters: require("./props/stringo.json"),
+  currConverter: {
+    label: "Capitalize",
+    functionName: "toCapitalize",
+    fieldType: "input"
+  }
+}

@@ -1,3 +1,4 @@
+import copyToClipboard from "../../utils/copyToClipboard";
 import Button from "./Button";
 
 function Preview(props) {
@@ -11,7 +12,10 @@ function Preview(props) {
       <pre
         className='overflow-ellipsis overflow-hidden relative border border-gray-400 rounded-md bg-gray-800 text-white 
          hover:focus:outline-none focus:ring focus:ring-brand-100 focus-within p-4'>
-        <Button className='absolute -right-2 top-2 mr-4' />
+        <Button
+          className='absolute -right-2 top-2 mr-4'
+          onClick={() => copyToClipboard(content)}
+        />
         {content}
       </pre>
     </div>

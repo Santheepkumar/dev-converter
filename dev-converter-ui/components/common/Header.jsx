@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 function Header() {
   return (
-    <div className='border-rounded-md bg-gray-700'>
+    <div className='border-rounded-md bg-gray-700 sticky top-0 z-50'>
       <div className='mx-auto py-2 px-3 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between flex-wrap'>
-          <img className='block h-12 animate-pulse' src={require("./icon.png")} alt='converterdev' />
+          <Image
+            className='block h-5 animate-pulse'
+            src={require("./icon.png")}
+            alt='converterdev'
+            width="200"
+            height="60"
+          />
           <div className='order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto'>
             <a
               href='#'
