@@ -1,13 +1,15 @@
-import React from "react";
-import HomePage from "../components/common/HomePage";
-import "../styles/globals.css";
+import React from "react"
+import Home from "../components/home/Home"
+import "../styles/globals.css"
 
 export default {
-  title: "Common/HomePage",
-  component: HomePage,
-};
+  title: "Common/Home",
+  component: Home
+}
 
-const Template = (args) => <HomePage {...args} />;
+const Template = args => <Home {...args} />
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Primary = Template.bind({})
+Primary.args = {
+  collections: require("./props/collections.json")
+}

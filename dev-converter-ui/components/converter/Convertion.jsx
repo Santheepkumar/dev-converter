@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Preview from "./common/Preview";
-import Input from "./common/Input";
-import TextArea from "./common/TextArea";
+import Preview from "../common/Preview";
+import Input from "../common/Input";
+import TextArea from "../common/TextArea";
 
 function Convertion({ converterFunction, currConverter }) {
   const [previewContent, setPC] = useState("Let go convert it");

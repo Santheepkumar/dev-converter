@@ -1,7 +1,5 @@
-import Header from "./common/Header";
-import Footer from "./common/Footer";
-import ConverterOptions from "./common/ConverterOptions";
-import Convertion from "./Convertion";
+import ConverterOptions from "./ConverterOptions";
+import Convertion from "./Convertion"
 
 function Converter({ currConverter, setCC, converterFunction, converters }) {
   return (

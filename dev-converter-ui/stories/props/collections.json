@@ -1,0 +1,22 @@
+[
+  {
+    "label": "String methods",
+    "short": "SM",
+    "path": "/stringo"
+  },
+  {
+    "label": "CSV methods",
+    "short": "CM",
+    "path": "/stringo"
+  },
+  {
+    "label": "Object methods",
+    "short": "OM",
+    "path": "/stringo"
+  },
+  {
+    "label": "Number methods",
+    "short": "NM",
+    "path": "/stringo"
+  }
+]

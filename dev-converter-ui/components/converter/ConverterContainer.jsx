@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Converter from "./Converter";
-import { data, functions } from "../functions/stringo";
-import useConverter from "../hooks/useConverter";
+import { data, functions } from "../../functions/stringo";
+import useConverter from "../../hooks/useConverter";
 
 function ConverterContainer() {
   const [currConverter, setCC, converterFunction, converters] = useConverter(

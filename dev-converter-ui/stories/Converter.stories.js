@@ -1,5 +1,5 @@
 import React from "react";
-import Converter from "../components/Converter";
+import Converter from "../components/converter/Converter"
 import "../styles/globals.css";
 
 export default {
