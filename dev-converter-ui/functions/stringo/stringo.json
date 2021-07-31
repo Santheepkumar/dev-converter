@@ -2,16 +2,36 @@
   {
     "label": "Capitalize",
     "functionName": "toCapitalize",
-    "fieldType": "input"
-  },
-  {
-    "label": "Stringifyy",
-    "functionName": "stringyfy",
-    "fieldType": "textArea"
+    "fieldType": "Textarea"
   },
   {
     "label": "Lowercase",
     "functionName": "toSmallCase",
-    "fieldType": "input"
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "Camel Case",
+    "functionName": "toCamelCase",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "Title Case",
+    "functionName": "toTitleCase",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "Snake Case",
+    "functionName": "toSnakeCase",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "Kebab Case",
+    "functionName": "toKebabCase",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "Swap Case",
+    "functionName": "toSwapCase",
+    "fieldType": "Textarea"
   }
 ]

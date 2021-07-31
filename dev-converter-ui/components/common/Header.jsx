@@ -8,7 +8,7 @@ function Header() {
         <div className="flex items-center justify-between flex-wrap">
           <Link href="/home">
             <Image
-              className="block h-5 animate-pulse"
+              className="block h-5 animate-pulse hover: cursor-pointer "
               src={require("./icon.png")}
               alt="converterdev"
               width="200"
