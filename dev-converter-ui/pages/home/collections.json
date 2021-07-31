@@ -1,24 +1,24 @@
 [
   {
-    "label": "String ",
-    "short": "SM",
+    "label": "Stringo",
+    "short": "ST",
     "path": "/stringo",
     "description": "String related converters"
   },
   {
-    "label": "Excel",
-    "short": "EC",
+    "label": "Excelran",
+    "short": "EX",
     "path": "/",
     "description": "CSV related converters"
   },
   {
-    "label": "Object",
-    "short": "OM",
+    "label": "Objecter",
+    "short": "OB",
     "path": "/",
     "description": "Object related converters"
   },
   {
-    "label": "Number",
+    "label": "Numrang",
     "short": "NM",
     "path": "/",
     "description": "Number related converters"
