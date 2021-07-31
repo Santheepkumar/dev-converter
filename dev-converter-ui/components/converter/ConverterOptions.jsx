@@ -126,7 +126,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                   </div>
                   <div className="ml-4">
                     <p className="text-base font-medium text-white">
-                      {con.label}
+                      {con.label}{" "}
                       {con.functionName === currConverter.functionName && "(Active)"}
                     </p>
                     <p className="mt-1 text-sm text-dark-300">
