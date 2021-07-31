@@ -3,24 +3,24 @@
     "label": "String ",
     "short": "SM",
     "path": "/stringo",
-    "description": "String related converter"
+    "description": "String related converters"
   },
   {
-    "label": "CSV",
-    "short": "CM",
-    "path": "/stringo",
-    "description": "CSV related converter "
+    "label": "Excel",
+    "short": "EC",
+    "path": "/",
+    "description": "CSV related converters"
   },
   {
     "label": "Object",
     "short": "OM",
-    "path": "/stringo",
-    "description": "object related converter "
+    "path": "/",
+    "description": "Object related converters"
   },
   {
     "label": "Number",
     "short": "NM",
-    "path": "/stringo",
-    "description": "Number related converter "
+    "path": "/",
+    "description": "Number related converters"
   }
 ]
