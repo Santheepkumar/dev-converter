@@ -1,5 +1,4 @@
 import Link from "next/link"
-import next from "next"
 import Image from "next/image"
 
 function Header() {

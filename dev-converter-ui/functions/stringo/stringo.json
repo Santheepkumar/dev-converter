@@ -4,7 +4,6 @@
     "functionName": "toCapitalize",
     "fieldType": "Textarea"
   },
-
   {
     "label": "Lowercase",
     "functionName": "toSmallCase",

@@ -17,24 +17,21 @@ function Convertion({ converterFunction, currConverter }) {
   }, [previewContent]);
 
   return (
-    <div className='max-w-7xl mx-auto mt-10 border border-gray-400 p-8 rounded-xl'>
-      <div className='flex justify-between'>
-        <div className='w-full md:w-1/2'>
+    <div className="max-w-7xl mx-auto mt-10 border border-gray-400 p-8 rounded-xl">
+      <div className="flex justify-between flex-wrap">
+        <div className="w-full md:w-1/2">
           {currConverter.fieldType === "input" ? (
             <Input converterLabel={currConverter.label} onChange={onChange} />
           ) : (
-            <TextArea
-              converterLabel={currConverter.label}
-              onChange={onChange}
-            />
+            <TextArea converterLabel={currConverter.label} onChange={onChange} />
           )}
         </div>
-        <div className='w-full md:w-1/2'>
+        <div className="w-full md:w-1/2 mt-4 sm:mt-0">
           <Preview content={previewContent} />
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Convertion;
