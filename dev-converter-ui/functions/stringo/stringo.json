@@ -5,7 +5,7 @@
     "fieldType": "input"
   },
   {
-    "label": "Stringify",
+    "label": "Stringifyy",
     "functionName": "stringyfy",
     "fieldType": "textArea"
   },
