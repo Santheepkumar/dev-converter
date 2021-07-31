@@ -1,5 +1,5 @@
 import ConverterOptions from "./ConverterOptions";
-import Convertion from "./Convertion"
+import MainConvertion from "./MainConvertion"
 
 function Converter({ currConverter, setCC, converterFunction, converters }) {
   return (
@@ -9,7 +9,7 @@ function Converter({ currConverter, setCC, converterFunction, converters }) {
         setCC={setCC}
         currConverter={currConverter}
       />
-      <Convertion
+      <MainConvertion
         converterFunction={converterFunction}
         currConverter={currConverter}
       />

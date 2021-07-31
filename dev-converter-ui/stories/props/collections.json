@@ -1,22 +1,26 @@
 [
   {
-    "label": "String methods",
+    "label": "String ",
     "short": "SM",
-    "path": "/stringo"
+    "path": "/stringo",
+    "description": "String related converters"
   },
   {
-    "label": "CSV methods",
-    "short": "CM",
-    "path": "/stringo"
+    "label": "Excel",
+    "short": "EC",
+    "path": "/",
+    "description": "CSV related converters"
   },
   {
-    "label": "Object methods",
+    "label": "Object",
     "short": "OM",
-    "path": "/stringo"
+    "path": "/",
+    "description": "Object related converters"
   },
   {
-    "label": "Number methods",
+    "label": "Number",
     "short": "NM",
-    "path": "/stringo"
+    "path": "/",
+    "description": "Number related converters"
   }
 ]

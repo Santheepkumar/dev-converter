@@ -1,34 +1,35 @@
 function allStringFunctions() {}
+const X = allStringFunctions.prototype;
 
-allStringFunctions.prototype.toCapitalize = str => {
+X.toCapitalize = str => {
   return str.toUpperCase()
 }
 
-allStringFunctions.prototype.toSmallCase = str => {
+X.toSmallCase = str => {
   return str.toLowerCase()
 }
 
-allStringFunctions.prototype.toCamelCase = string => {
-  function camalize(str) {
-    const s =
-      str &&
-      str
-        .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-        .map(x => x.slice(0, 1).toUpperCase() + x.slice(1).toLowerCase())
-        .join("")
-    return str.slice(0, 1).toLowerCase() + s.slice(1)
+  X.toCamelCase = string => {
+    function camalize(str) {
+      const s =
+        str &&
+        str
+          .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+          .map(x => x.slice(0, 1).toUpperCase() + x.slice(1).toLowerCase())
+          .join("")
+      return str.slice(0, 1).toLowerCase() + s.slice(1)
+    }
+
+    const multy = string.split(" ")
+    if (!multy.length) {
+      return camalize(string)
+    }
+
+    const result = multy.map(x => camalize(x)).join(" ")
+    return result
   }
 
-  const multy = string.split(" ")
-  if (!multy.length) {
-    return camalize(string)
-  }
-
-  const result = multy.map(x => camalize(x)).join(" ")
-  return result
-}
-
-allStringFunctions.prototype.toTitleCase = string => {
+X.toTitleCase = string => {
   function Titleize(str) {
     return (
       str &&
@@ -47,7 +48,7 @@ allStringFunctions.prototype.toTitleCase = string => {
   return result
 }
 
-allStringFunctions.prototype.toSnakeCase = string => {
+X.toSnakeCase = string => {
   function Snakeize(str) {
     return (
       str &&
@@ -65,7 +66,7 @@ allStringFunctions.prototype.toSnakeCase = string => {
   return result
 }
 
-allStringFunctions.prototype.toKebabCase = string => {
+X.toKebabCase = string => {
   function kebabize(str) {
     return (
       str &&
@@ -83,7 +84,7 @@ allStringFunctions.prototype.toKebabCase = string => {
   return result
 }
 
-allStringFunctions.prototype.toSwapCase = string => {
+X.toSwapCase = string => {
   function swap(str) {
     return [...str]
       .map(c => (c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase()))

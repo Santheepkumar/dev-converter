@@ -3,18 +3,18 @@ import Preview from "../common/Preview";
 import Input from "../common/Input";
 import TextArea from "../common/TextArea";
 
-function Convertion({ converterFunction, currConverter }) {
-  const [previewContent, setPC] = useState("Let go convert it");
+function MainConvertion({ converterFunction, currConverter }) {
+  const [previewContent, setPC] = useState("");
 
   const onChange = (userInput) => {
     setPC(converterFunction(userInput));
   };
 
-  useEffect(() => {
-    if (!previewContent) {
-      setPC("Let go convert it");
-    }
-  }, [previewContent]);
+  // useEffect(() => {
+  //   if (!previewContent) {
+  //     setPC("Let go convert it");
+  //   }
+  // }, [previewContent]);
 
   return (
     <div className="max-w-7xl mx-auto mt-10 border border-gray-400 p-8 rounded-xl">
@@ -34,4 +34,4 @@ function Convertion({ converterFunction, currConverter }) {
   )
 }
 
-export default Convertion;
+export default MainConvertion;

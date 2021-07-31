@@ -8,8 +8,8 @@ const gray = {
   600: "#2a2a2a",
   700: "#1f1f1f",
   800: "#181818",
-  900: "#0f0f0f",
-};
+  900: "#0f0f0f"
+}
 const brand = {
   100: "#c5f1dd",
   200: "#c5f1dd",
@@ -19,8 +19,8 @@ const brand = {
   600: "#38bc81",
   700: "#1c8656",
   800: "#10633e",
-  900: "#10633e",
-};
+  900: "#10633e"
+}
 
 const blueGray = {
   50: "#F8FAFC",
@@ -32,8 +32,8 @@ const blueGray = {
   600: "#475569",
   700: "#334155",
   800: "#1E293B",
-  900: "#0F172A",
-};
+  900: "#0F172A"
+}
 
 const coolGray = {
   50: "#F9FAFB",
@@ -45,33 +45,38 @@ const coolGray = {
   600: "#4B5563",
   700: "#374151",
   800: "#1F2937",
-  900: "#111827",
-};
+  900: "#111827"
+}
 
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    borderColor: (theme) => ({
+    borderColor: theme => ({
       ...theme("colors"),
       DEFAULT: "#f0f2f5",
       // note: default border not working
       // temp workaround is to use variations below
       lightmode: "#f0f2f5",
-      darkmode: theme("colors.gray.600", "currentColor"),
+      darkmode: theme("colors.gray.600", "currentColor")
+    }),
+    stroke: theme => ({
+      red: theme("colors.red.500"),
+      green: theme("colors.green.500"),
+      blue: theme("colors.blue.500")
     }),
     extend: {
       typography: {
         DEFAULT: {
           css: {
             "code::before": {
-              content: '""',
+              content: '""'
             },
             "code::after": {
-              content: '""',
-            },
-          },
-        },
+              content: '""'
+            }
+          }
+        }
       },
       colors: {
         transparent: "transparent",
@@ -94,12 +99,12 @@ module.exports = {
           600: "#2a2a2a",
           700: "#1f1f1f",
           800: "#181818",
-          900: "#0f0f0f",
+          900: "#0f0f0f"
         },
 
         "secondary-text": {
           light: "#71767F",
-          dark: "#878787",
+          dark: "#878787"
         },
 
         brand: {
@@ -112,7 +117,7 @@ module.exports = {
           600: "#65D9A5",
           700: "#3ECF8E",
           800: "#24b47e", // green-500 in dashboard
-          900: "#2c9c6a",
+          900: "#2c9c6a"
         },
 
         /* 
@@ -120,19 +125,19 @@ module.exports = {
         */
         "typography-body": {
           light: coolGray[600],
-          dark: gray[100],
+          dark: gray[100]
         },
         "typography-body-secondary": {
           light: coolGray[500],
-          dark: gray[300],
+          dark: gray[300]
         },
         "typography-body-strong": {
           light: coolGray[100],
-          dark: "white",
+          dark: "white"
         },
         "typography-body-faded": {
           light: coolGray[400],
-          dark: gray[400],
+          dark: gray[400]
         },
 
         /* 
@@ -140,15 +145,15 @@ module.exports = {
         */
         "bg-primary": {
           light: "white",
-          dark: gray[800],
+          dark: gray[800]
         },
         "bg-secondary": {
           light: blueGray[100],
-          dark: gray[700],
+          dark: gray[700]
         },
         "bg-alt": {
           light: blueGray[50], // gray[100],
-          dark: gray[600],
+          dark: gray[600]
         },
 
         /* 
@@ -156,37 +161,37 @@ module.exports = {
         */
         "input-value": {
           light: coolGray[600],
-          dark: gray[200],
+          dark: gray[200]
         },
         "input-placeholder": {
           light: coolGray[300],
-          dark: gray[400],
+          dark: gray[400]
         },
         "input-border": {
           light: coolGray[300],
-          dark: gray[500],
+          dark: gray[500]
         },
         "input-label": {
           light: coolGray[600],
-          dark: gray[200],
+          dark: gray[200]
         },
         "input-border-hover": {
           light: coolGray[400],
-          dark: gray[400],
+          dark: gray[400]
         },
         "input-border-focus": {
           light: brand[300],
-          dark: brand[300],
-        },
+          dark: brand[300]
+        }
       },
 
       transitionProperty: {
-        "max-height": "max-height",
-      },
-    },
+        "max-height": "max-height"
+      }
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-};
+  plugins: []
+}

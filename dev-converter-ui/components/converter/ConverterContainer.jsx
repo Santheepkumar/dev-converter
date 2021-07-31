@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Converter from "./Converter";
-import { data, functions } from "../../functions/stringo";
 import useConverter from "../../hooks/useConverter";
 
-function ConverterContainer() {
+function ConverterContainer({ data, functions }) {
   const [currConverter, setCC, converterFunction, converters] = useConverter(
     functions,
     data
@@ -13,7 +12,7 @@ function ConverterContainer() {
     currConverter,
     setCC,
     converterFunction,
-    converters,
+    converters
   };
 
   return <Converter {...goProps} />;
