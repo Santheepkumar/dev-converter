@@ -3,7 +3,7 @@ import Convertion from "./Convertion"
 
 function Converter({ currConverter, setCC, converterFunction, converters }) {
   return (
-    <div className='h-screen mt-8'>
+    <div className='m-2 sm:m-8 mt-10 sm:mt-10'>
       <ConverterOptions
         converters={converters}
         setCC={setCC}
