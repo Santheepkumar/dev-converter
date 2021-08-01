@@ -61,3 +61,7 @@ export const Small = Template.bind({});
 Small.args = {
   content: "Santheep kumar",
 };
+export const None = Template.bind({});
+None.args = {
+  content: " ",
+};

@@ -4,7 +4,7 @@ import Input from "../common/Input";
 import TextArea from "../common/TextArea";
 
 function MainConvertion({ converterFunction, currConverter }) {
-  const [previewContent, setPC] = useState("");
+  const [previewContent, setPC] = useState(" ");
 
   const onChange = (userInput) => {
     setPC(converterFunction(userInput));
