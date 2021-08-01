@@ -4,7 +4,7 @@ import Input from "../common/Input";
 import TextArea from "../common/TextArea";
 
 function MainConvertion({ converterFunction, currConverter }) {
-  const [previewContent, setPC] = useState(" ");
+  const [previewContent, setPC] = useState("");
 
   const onChange = (userInput) => {
     setPC(converterFunction(userInput));
@@ -27,7 +27,7 @@ function MainConvertion({ converterFunction, currConverter }) {
           )}
         </div>
         <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
-          <Preview content={previewContent} />
+          <Preview content={previewContent || " "} />
         </div>
       </div>
     </div>
