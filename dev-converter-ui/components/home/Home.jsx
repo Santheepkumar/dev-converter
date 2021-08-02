@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { getColorByKey } from "../../utils/color.util"
+import Link from "next/link";
+import { getColorByKey } from "../../utils/color.util";
 
 function Home({ collections }) {
   return (
@@ -39,4 +39,4 @@ function Home({ collections }) {
   );
 }
 
-export default Home
+export default Home;
