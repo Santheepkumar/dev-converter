@@ -1,9 +1,9 @@
 import ConverterOptions from "./ConverterOptions";
-import MainConvertion from "./MainConvertion"
+import MainConvertion from "./MainConvertion";
 
 function Converter({ currConverter, setCC, converterFunction, converters }) {
   return (
-    <div className='m-2 sm:m-8 mt-10 sm:mt-10'>
+    <div className="m-2 sm:m-8 mt-10 sm:mt-10">
       <ConverterOptions
         converters={converters}
         setCC={setCC}

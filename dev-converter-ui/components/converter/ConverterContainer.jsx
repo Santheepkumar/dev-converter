@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Converter from "./Converter";
-import useConverter from "../../hooks/useConverter";
+import useConverter from "../../lib/hooks/useConverter";
 
 function ConverterContainer({ data, functions }) {
   const [currConverter, setCC, converterFunction, converters] = useConverter(

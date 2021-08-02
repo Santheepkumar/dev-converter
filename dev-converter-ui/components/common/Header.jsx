@@ -1,5 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
+import { auth } from "@lib/firebase";
 
 function Header() {
   return (
@@ -24,11 +25,18 @@ function Header() {
             >
               About as
             </a>
+            <a
+              onClick={() => auth.signOut()}
+              className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white 
+      focus:outline-none focus:ring focus:ring-brand-100"
+            >
+              Logout
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
