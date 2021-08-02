@@ -8,7 +8,7 @@
   {
     "label": "Excelran",
     "short": "EX",
-    "path": "/",
+    "path": "/excelran",
     "description": "CSV related converters"
   },
   {
