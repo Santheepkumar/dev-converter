@@ -3,15 +3,10 @@ import { auth, firestore, googleAuthProvider } from "@lib/firebase";
 import Router from "next/router";
 import { useContext } from "react";
 import { UserContext } from "@lib/context";
+import Login from "@components/common/Login";
 
 export default function Index() {
   const { user } = useContext(UserContext);
-
-  useEffect(() => {
-    if (user) {
-      Router.push("/home");
-    }
-  }, [user]);
 
   const signInWithGoogle = async () => {
     const result = await auth.signInWithPopup(googleAuthProvider);
@@ -20,11 +15,11 @@ export default function Index() {
     }
   };
 
-  return (
-    <>
-      <button onClick={signInWithGoogle} className="text-white">
-        Google login
-      </button>
-    </>
-  );
+  useEffect(() => {
+    if (user) {
+      Router.push("/home");
+    }
+  }, [user]);
+
+  return <Login signInWithGoogle={signInWithGoogle} />;
 }
