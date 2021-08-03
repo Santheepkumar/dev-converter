@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth } from "@lib/firebase";
+import Router from "next/router";
 
 function Header() {
   return (
@@ -18,20 +19,24 @@ function Header() {
           </Link>
 
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-            <a
-              href="#"
-              className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white 
+            <div className="flex">
+              <a
+                href="#"
+                className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white
       focus:outline-none focus:ring focus:ring-brand-100"
-            >
-              About as
-            </a>
-            <a
-              onClick={() => auth.signOut()}
-              className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white 
-      focus:outline-none focus:ring focus:ring-brand-100"
-            >
-              Logout
-            </a>
+              >
+                About as
+              </a>
+              <a
+                onClick={() => {
+                  Router.push("/login");
+                }}
+                className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white
+      focus:outline-none focus:ring focus:ring-brand-100 cursor-pointer ml-2"
+              >
+                Logout
+              </a>
+            </div>
           </div>
         </div>
       </div>
