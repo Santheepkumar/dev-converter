@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Login({ signInWithGoogle }) {
   return (
-    <div className="mt-5 text-center bg-white w-96 rounded-xl max-w-5xl mx-auto">
+    <div className="mt-10 text-center bg-white w-96 rounded-xl max-w-5xl mx-auto">
       <div className="py-20">
         <div className="flex justify-center ml-5">
           <Image
