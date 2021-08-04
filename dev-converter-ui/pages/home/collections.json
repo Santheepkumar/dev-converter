@@ -8,7 +8,7 @@
   {
     "label": "Excelran",
     "short": "EX",
-    "path": "/",
+    "path": "/Excelran",
     "description": "CSV related converters"
   },
   {
@@ -19,7 +19,7 @@
   },
   {
     "label": "Numrang",
-    "short": "NM",
+    "short": "NR",
     "path": "/",
     "description": "Number related converters"
   }
