@@ -7,7 +7,7 @@ function Login({ signInWithGoogle }) {
         <div className="flex justify-center ml-5">
           <Image
             className="block h-5 "
-            src={require("../assets/images/Group.png")}
+            src={require("../assets/images/dark.png")}
             alt="converterdev"
             width="300"
             height="80"
@@ -36,7 +36,7 @@ function Login({ signInWithGoogle }) {
           <h1 className="p-1 flex justify-center text-dark-800  mt-5 text-base border border-gray-300 rounded-md">
             <Image
               className="block h-5"
-              src={require("../assets/images/GitHub-Mark.png")}
+              src={require("../assets/images/github.png")}
               alt="converterdev"
               width="32"
               height="32"
