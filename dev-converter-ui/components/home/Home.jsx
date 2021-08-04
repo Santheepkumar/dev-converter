@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { getColorByKey } from "../../utils/color.util"
+import Link from "next/link";
+import { getColorByKey } from "../../utils/color.util";
 
 function Home({ collections }) {
   return (
@@ -14,7 +14,7 @@ function Home({ collections }) {
               <div className="flex bg-gray-900 hover:bg-gray-600 border rounded-xl border-gray-600 w-60 sm:w-80">
                 <div>
                   <h1
-                    className=" px-5 py-6 text-white bg rounded-xl  text-3xl"
+                    className=" px-6 py-6 text-white bg rounded-xl  text-3xl"
                     style={{
                       backgroundColor: getColorByKey(key)
                     }}
@@ -39,4 +39,4 @@ function Home({ collections }) {
   );
 }
 
-export default Home
+export default Home;
