@@ -4,7 +4,7 @@ import { useAuth } from "../../lib/auth.context";
 import Router from "next/router";
 
 function Header() {
-  const { logout, user } = useAuth();
+  const { user, logout } = useAuth();
   return (
     <div className="border-rounded-md bg-gray-700 sticky top-0 z-50">
       <div className="mx-auto py-2 px-3 sm:px-6 lg:px-8">

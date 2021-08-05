@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth, firestore, googleAuthProvider } from "../lib/firebase";
 
-const AuthContext = createContext();
+const AuthContext = createContext({});
 
 const useAuth = () => useContext(AuthContext);
 
