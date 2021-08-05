@@ -1,35 +1,44 @@
 function About() {
   return (
-    <div>
-      <div className="bg-dark-700 border rounded-lg border-dark-700 px-7 py-5 ">
-        <div className="mx-auto  max-w-7xl ">
+    <div className="">
+      <div className="bg-white">
+        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
-              <h2 className="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                 Our Team
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-500">
                 Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue
                 ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu
                 faucibus vivamus eget bibendum cras.
               </p>
             </div>
             <div className="lg:col-span-2">
-              <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+              <ul
+                className="
+                  space-y-12
+                  sm:grid sm:grid-cols-2
+                  sm:gap-x-6 sm:gap-y-12
+                  sm:space-y-0
+                  lg:gap-x-8
+                "
+              >
                 <li>
                   <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2"></div>
-                    <img
-                      // src={require("../assets/images/santheep.png")}
-                      width="500"
-                      height="500"
-                    />
-                    <div className="text-lg ml-20 leading-6 font-medium space-y-1">
-                      <h3 className="text-white ml-2">Santheepkumar</h3>
-                      <p className="text-indigo-600">Senior Developer</p>
+                    <div className="aspect-w-3 aspect-h-2">
+                      <img
+                        className="object-cover shadow-lg rounded-lg"
+                        src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div className="text-lg leading-6 font-medium space-y-1">
+                      <h3>Emma Dorsey</h3>
+                      <p className="text-indigo-600">Senior Front-end Developer</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-300">
+                      <p className="text-gray-500">
                         Ultricies massa malesuada viverra cras lobortis. Tempor orci
                         hac ligula dapibus mauris sit ut eu. Eget turpis urna
                         maecenas cras. Nisl dictum.
@@ -78,20 +87,20 @@ function About() {
                 </li>
 
                 <li>
-                  <div className="space-y-4 mt-4">
+                  <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
                       <img
-                        // src={require("../assets/images/sanjai.png")}
-                        width="500"
-                        height="500"
+                        className="object-cover shadow-lg rounded-lg"
+                        src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                        alt=""
                       />
                     </div>
-                    <div className="text-lg ml-20 leading-6 font-medium space-y-1">
-                      <h3 className="ml-5 text-white">Sanjaikumar</h3>
-                      <p className="text-indigo-600">Junior Developer</p>
+                    <div className="text-lg leading-6 font-medium space-y-1">
+                      <h3>Alicia Bell</h3>
+                      <p className="text-indigo-600">Junior Copywriter</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-300">
+                      <p className="text-gray-500">
                         Turpis lectus et amet elementum. Mi duis integer sed in vitae
                         consequat. Nam vitae, in felis mi dui tempus. Porta at turpis
                         eu odio. Et, sed duis in blandit bibendum accumsan. Purus
