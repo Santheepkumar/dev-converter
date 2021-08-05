@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { getColorByKey } from "../../utils/color.util"
+import { useState } from "react";
+import { getColorByKey, getRandomColor } from "../../utils/color.util";
 
 function ConverterOptions({ converters, setCC, currConverter }) {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   return (
     <div className="">
       <div className="flex justify-center mt-2">
@@ -54,6 +54,24 @@ function ConverterOptions({ converters, setCC, currConverter }) {
             />
           </svg>
         </button>
+      </div>
+      
+      {/* Sanjai check this */}
+      <div className="mx-auto w-56 mt-10">
+        <label className="text-white font-medium text-xl">Active Converter</label>
+        <div className="text-white mt-2 border border-gray-500 rounded-md">
+          <div className="flex">
+            <div
+              className="bg-pink-500 py-2 px-4 rounded-md text-3xl"
+              style={{
+                backgroundColor: getRandomColor()
+              }}
+            >
+              {currConverter.label.slice(0, 1)}
+            </div>
+            <h1 className="ml-8 mt-3 text-xl">{currConverter.label}</h1>
+          </div>
+        </div>
       </div>
 
       {show && (
@@ -163,7 +181,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default ConverterOptions
+export default ConverterOptions;

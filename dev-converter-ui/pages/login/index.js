@@ -1,17 +1,23 @@
 import { useEffect } from "react";
-import { auth, firestore, googleAuthProvider } from "@lib/firebase";
 import Router from "next/router";
-import { useContext } from "react";
-import { UserContext } from "@lib/context";
+// import { useContext } from "react";
+// import { UserContext } from "@lib/context";
 import Login from "@components/common/Login";
+import { auth, firestore, googleAuthProvider } from "@lib/firebase";
+import { AuthProvider, useAuth } from "@lib/auth.context";
 
 export default function Index() {
-  const { user } = useContext(UserContext);
+  // const { user } = useContext(UserContext);
+  const { user, login } = useAuth();
 
   const signInWithGoogle = async () => {
-    const result = await auth.signInWithPopup(googleAuthProvider);
-    if (result.user) {
+    try {
+      // setError("");
+      // setLoading(true);
+      await login();
       Router.push("/home");
+    } catch {
+      alert("Failed to log in");
     }
   };
 
