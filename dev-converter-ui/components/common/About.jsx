@@ -20,7 +20,7 @@ function About() {
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2"></div>
                     <img
-                      src={require("../assets/images/santheep.png")}
+                      // src={require("../assets/images/santheep.png")}
                       width="500"
                       height="500"
                     />
@@ -81,7 +81,7 @@ function About() {
                   <div className="space-y-4 mt-4">
                     <div className="aspect-w-3 aspect-h-2">
                       <img
-                        src={require("../assets/images/sanjai.png")}
+                        // src={require("../assets/images/sanjai.png")}
                         width="500"
                         height="500"
                       />
