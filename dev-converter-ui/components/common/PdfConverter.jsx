@@ -28,11 +28,45 @@ function PdfConverter() {
           <label>Choose your file</label>
         </h1>
 
-        <div className="mt-5 ml-36  focus:border-brand-700 border border-dashed rounded-xl border-gray-400 w-72">
-          <input
-            className="focus:outline-none focus:border-brand-700 py-16 px-10 text-center  "
-            type="file"
-          />
+        <div className="mt-5 ml-36  focus:border-brand-700  w-72">
+          <div>
+            <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-500 border-dashed rounded-md">
+              <div className="space-y-1 text-center">
+                <svg
+                  className="mx-auto h-12 w-12 text-dark-300"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 48 48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <div className="flex text-sm text-gray-600">
+                  <label
+                    htmlFor="file-upload"
+                    className="relative px-2 py-1  cursor-pointer bg-dark-200 rounded-md font-medium text-dark-700 focus-within:outline-none focus-within:ring-2 border hover: border-gray-200  "
+                  >
+                    <span>Upload a file</span>
+                    <input
+                      id="file-upload"
+                      name="file-upload"
+                      type="file"
+                      className="sr-only"
+                    />
+                  </label>
+                  <p className="pl-3 text-gray-500">or drag and drop</p>
+                </div>
+                <p className="text-xs text-gray-300 pt-2">
+                  PNG, JPG, GIF up to 10MB
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <button className="px-3 focus:bg-gray-800 py-2 mt-10 focus:outline-none focus:text-brand-700  border-gray-500 hover:bg-gray-600 hover:border-gray-400 focus:ring focus:ring-brand-800 font-bold text-base text-white border rounded-lg">
