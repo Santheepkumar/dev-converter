@@ -97,6 +97,20 @@ X.toSwapCase = string => {
   const result = multy.map(x => swap(x)).join(" ");
   return result;
 };
+X.toJSONtoCSV = string => {
+  JSONtoCSV = (arr, columns, delimiter = ",") =>
+    [
+      columns.join(delimiter),
+      ...arr.map(obj =>
+        columns.reduce(
+          (acc, key) =>
+            `${acc}${!acc.length ? "" : delimiter}"${!obj[key] ? "" : obj[key]}"`,
+          ""
+        )
+      )
+    ].join("\n");
+};
+
 const ASF = new allStringFunctions();
 
 export default ASF;

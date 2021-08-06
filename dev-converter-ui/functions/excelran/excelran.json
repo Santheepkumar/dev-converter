@@ -1,0 +1,22 @@
+[
+  {
+    "label": "JSONtoCSV ",
+    "functionName": "toJSONtoCSV",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "CSVtoJSON ",
+    "functionName": "toCSVtoJSON",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "arraytoCSV ",
+    "functionName": "toarraytoCSV",
+    "fieldType": "Textarea"
+  },
+  {
+    "label": "CSVToArray",
+    "functionName": "toCSVToArray",
+    "fieldType": "Textarea"
+  }
+]
