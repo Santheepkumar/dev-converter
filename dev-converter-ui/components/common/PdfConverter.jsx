@@ -28,7 +28,7 @@ function PdfConverter() {
           <label>Choose your file</label>
         </h1>
 
-        <div className="mt-5 ml-36  focus:border-brand-700  w-72">
+        <div className="mt-5   focus:border-brand-700  w-72 mx-auto">
           <div>
             <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-500 border-dashed rounded-md">
               <div className="space-y-1 text-center">
@@ -49,7 +49,7 @@ function PdfConverter() {
                 <div className="flex text-sm text-gray-600">
                   <label
                     htmlFor="file-upload"
-                    className="relative px-2 py-1  cursor-pointer bg-dark-200 rounded-md font-medium text-dark-700 focus-within:outline-none focus-within:ring-2 border hover: border-gray-200  "
+                    className="relative px-1 py-0.5 mt-3 cursor-pointer bg-dark-200 rounded-md font-medium text-dark-700 focus-within:outline-none focus-within:ring-2 border hover: border-gray-200  "
                   >
                     <span>Upload a file</span>
                     <input
@@ -59,9 +59,9 @@ function PdfConverter() {
                       className="sr-only"
                     />
                   </label>
-                  <p className="pl-3 text-gray-500">or drag and drop</p>
+                  <p className="pl-3 mt-3 text-gray-500">or drag and drop</p>
                 </div>
-                <p className="text-xs text-gray-300 pt-2">
+                <p className="text-xs  text-gray-300 pt-5">
                   PNG, JPG, GIF up to 10MB
                 </p>
               </div>
