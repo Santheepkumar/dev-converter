@@ -1,18 +1,17 @@
 function About() {
   return (
     <div className="">
-      <div className="bg-white">
-        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+      <div className="bg-gray-800 border border-dark-400 rounded-2xl">
+        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 ">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+              <h2 className="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
                 Our Team
               </h2>
-              <p className="text-xl text-gray-500">
-                Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue
-                ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu
-                faucibus vivamus eget bibendum cras.
-              </p>
+              <ul>
+                <li className="text-xl text-gray-100">Santheepkumar </li>
+                <li className="text-xl text-gray-100">Sanjaikumar </li>
+              </ul>
             </div>
             <div className="lg:col-span-2">
               <ul
@@ -34,11 +33,11 @@ function About() {
                       />
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
-                      <h3>Emma Dorsey</h3>
-                      <p className="text-indigo-600">Senior Front-end Developer</p>
+                      <h3 className="text-white">Santheepkumar</h3>
+                      <p className="text-indigo-500">Senior Developer</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-500">
+                      <p className="text-gray-300">
                         Ultricies massa malesuada viverra cras lobortis. Tempor orci
                         hac ligula dapibus mauris sit ut eu. Eget turpis urna
                         maecenas cras. Nisl dictum.
@@ -96,11 +95,11 @@ function About() {
                       />
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
-                      <h3>Alicia Bell</h3>
-                      <p className="text-indigo-600">Junior Copywriter</p>
+                      <h3 className="text-white">Sanjaikumar</h3>
+                      <p className="text-indigo-600">Junior Developer</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-500">
+                      <p className="text-gray-300">
                         Turpis lectus et amet elementum. Mi duis integer sed in vitae
                         consequat. Nam vitae, in felis mi dui tempus. Porta at turpis
                         eu odio. Et, sed duis in blandit bibendum accumsan. Purus
