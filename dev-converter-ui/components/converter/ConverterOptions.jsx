@@ -30,7 +30,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
           </svg>
         </button>
       </div>
-      
+
       {/* Sanjai check this */}
       <div className="mx-auto w-56 mt-10">
         <label className="text-white font-medium text-xl">Active Converter</label>
@@ -97,10 +97,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                         {con.functionName === currConverter.functionName &&
                           "(Active)"}
                       </p>
-                      <p className="mt-1 text-sm text-dark-300">
-                        Get a better understanding of where your traffic is coming
-                        from.
-                      </p>
+                      <p className="mt-1 text-sm text-dark-300">{con.description}</p>
                     </div>
                   </a>
                 ))}
