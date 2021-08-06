@@ -16,7 +16,8 @@ function ConverterOptions({ converters, setCC, currConverter }) {
           <span>Select Converter</span>
 
           <svg
-            className="animate-bounce text-gray-400 ml-2 h-5 w-5 group-hover:text-dark-300 transition ease-in-out duration-150"
+            className="
+            animate-bounce text-gray-400 ml-2 h-5 w-5 group-hover:text-dark-300 transition ease-in-out duration-150"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -52,9 +53,9 @@ function ConverterOptions({ converters, setCC, currConverter }) {
 
       {show && (
         <div className="z-10 inset-0 absolute flex justify-center items-center  bg-gray-500 bg-opacity-75 transition-opacity">
-          <div className=" mt-4 mx-auto w-screen max-w-md sm:px-0 lg:max-w-3xl">
+          <div className="mt-4 mx-auto w-screen max-w-md sm:px-0 lg:max-w-3xl">
             <div className=" rounded-lg shadow-lg ring-1 ring-gray-50 ring-opacity-5 overflow-hidden">
-              <div className=" relative grid gap-6 bg-gray-800 px-6 py-6 sm:gap-8 sm:p-10 lg:grid-cols-2">
+              <div className="relative grid gap-6 bg-gray-800 px-6 py-6 sm:gap-8 sm:p-10 lg:grid-cols-2">
                 <div
                   className="absolute right-0 m-2 cursor-pointer"
                   onClick={() => setShow(!show)}
@@ -85,7 +86,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                     onDoubleClick={() => setShow(!show)}
                   >
                     <div
-                      className="lex-shrink-0 flex px-4 items-center justify-center h-10 w-10 rounded-md text-white sm:h-12 sm:w-12"
+                      className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white sm:h-12 sm:w-12"
                       style={{
                         backgroundColor: getColorByKey(key)
                       }}
