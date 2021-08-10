@@ -1,8 +1,10 @@
 [
   {
-    "label": "JSONtoCSV ",
+    "label": "JSON to CSV ",
     "functionName": "toJSONtoCSV",
-    "fieldType": "Textarea"
+    "fieldType": "Textarea",
+    "download": "downloadCsv",
+    "downloadParams": ["dowload.csv", "text/csv;encoding:utf-8"]
   },
   {
     "label": "CSVtoJSON ",
