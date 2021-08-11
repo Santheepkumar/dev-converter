@@ -1,18 +1,31 @@
 function allExcelranFunctions() {}
 const X = allExcelranFunctions.prototype;
 
-X.toJSONtoCSV = arr => {
+X.toJSONtoCSV = (arr = "[]") => {
+  if (!arr.includes("[") || !arr.includes("]")) {
+    return ""
+  }
+  
+  arr = eval(arr);
+  console.log(arr);
   if (!Array.isArray(arr)) {
     return "";
   }
-  arr = arr || [];
-  const columns = Object.keys(arr[0] || {});
+  // This gives all keys of max length obj
+  const columns = arr.reduce(
+    (a, e) =>
+      Object.keys(a).length > Object.keys(e).length
+        ? Object.keys(a)
+        : Object.keys(e),
+    {}
+  );
+
   return [
     columns.join(","),
     ...arr.map(obj => {
       return columns.reduce(
         (acc, key) =>
-          `${acc}${!acc.length ? "" : delimiter}"${!obj[key] ? "" : obj[key]}"`,
+          `${acc}${!acc.length ? "" : ","}"${!obj[key] ? "" : obj[key]}"`,
         ""
       );
     })

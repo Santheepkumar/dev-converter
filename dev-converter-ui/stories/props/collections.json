@@ -14,12 +14,12 @@
   {
     "label": "Object",
     "short": "OM",
-    "path": "/",
+    "path": "/image",
     "description": "Object related converters"
   },
   {
     "label": "Number",
-    "short": "NM",
+    "short": "NR",
     "path": "/",
     "description": "Number related converters"
   }

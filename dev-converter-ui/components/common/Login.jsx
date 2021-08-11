@@ -15,9 +15,7 @@ function Login({ signInWithGoogle }) {
         </div>
         <div className="mb-14">
           <h1 className="mt-5 text-3xl text-dark-800">Welcome</h1>
-          <h1 className="text-dark-600 mt-4 text-lg">
-            Log in to dev converter.
-          </h1>
+          <h1 className="text-dark-600 mt-4 text-lg">Log in to dev converter.</h1>
         </div>
         <div className="mt-7 ml-7 w-80">
           <a

@@ -33,7 +33,9 @@ function ConverterOptions({ converters, setCC, currConverter }) {
 
       {/* Sanjai check this */}
       <div className="mx-auto w-56 mt-10">
-        <label className="text-white font-medium text-xl">Active Converter</label>
+        <label className="text-white ml-8 font-medium text-xl">
+          Active Converter
+        </label>
         <div className="text-white mt-2 border border-gray-500 rounded-md">
           <div className="flex">
             <div

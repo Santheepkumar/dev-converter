@@ -1,24 +1,25 @@
 [
   {
-    "label": "Json to Csv ",
+    "label": "JSON to CSV ",
     "functionName": "toJSONtoCSV",
     "fieldType": "Textarea",
-    "description": "This case convert Json case to Csv"
+    "download": "downloadCsv",
+    "downloadParams": ["dowload.csv", "text/csv;encoding:utf-8"]
   },
   {
-    "label": "Csv to Json ",
+    "label": "CSV to JSON ",
     "functionName": "toCSVtoJSON",
     "fieldType": "Textarea",
     "description": "This case convert Csv case to Json"
   },
   {
-    "label": "Array to Csv ",
+    "label": "Array to CSV ",
     "functionName": "toarraytoCSV",
     "fieldType": "Textarea",
     "description": "This case convert Array case to Csv"
   },
   {
-    "label": "Csv To Array",
+    "label": "CSV To Array",
     "functionName": "toCSVToArray",
     "fieldType": "Textarea",
     "description": "This case convert Csv case to array"

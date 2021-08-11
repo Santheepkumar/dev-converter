@@ -1,5 +1,6 @@
 import copyToClipboard from "../../utils/copyToClipboard";
 import Button from "./Button";
+import downloadMethods from "../../utils/downloadMethods";
 
 function Preview(props) {
   const content =
@@ -13,11 +14,25 @@ function Preview(props) {
         className=" relative border border-gray-400 rounded-md bg-gray-800 text-white 
          hover:focus:outline-none focus:ring focus:ring-brand-100 focus-within p-4 overflow-hidden"
       >
-        <Button
-          className="absolute -right-2 top-2 mr-4"
-          onClick={() => copyToClipboard(content)}
-          buttonType="copy"
-        />
+        {props.currConverter.download ? (
+          <Button
+            buttonType="download"
+            className="absolute -right-2 top-2 mr-4"
+            onClick={() => {
+              downloadMethods[props.currConverter.download](
+                content,
+                ...props.currConverter.downloadParams
+              );
+            }}
+          />
+        ) : (
+          <Button
+            className="absolute -right-2 top-2 mr-4"
+            onClick={() => copyToClipboard(content)}
+            buttonType="copy"
+          />
+        )}
+
         {content}
       </pre>
     </div>

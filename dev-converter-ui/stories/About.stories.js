@@ -3,7 +3,7 @@ import About from "../components/common/About";
 import "../styles/globals.css";
 
 export default {
-  title: "About",
+  title: "Common/About",
   component: About
 };
 
