@@ -99,10 +99,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                         {con.functionName === currConverter.functionName &&
                           "(Active)"}
                       </p>
-                      <p className="mt-1 text-sm text-dark-300">
-                        Get a better understanding of where your traffic is coming
-                        from.
-                      </p>
+                      <p className="mt-1 text-sm text-dark-300">{con.description}</p>
                     </div>
                   </a>
                 ))}

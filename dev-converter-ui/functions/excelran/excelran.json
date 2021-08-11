@@ -7,18 +7,21 @@
     "downloadParams": ["dowload.csv", "text/csv;encoding:utf-8"]
   },
   {
-    "label": "CSVtoJSON ",
+    "label": "CSV to JSON ",
     "functionName": "toCSVtoJSON",
-    "fieldType": "Textarea"
+    "fieldType": "Textarea",
+    "description": "This case convert Csv case to Json"
   },
   {
-    "label": "arraytoCSV ",
+    "label": "Array to CSV ",
     "functionName": "toarraytoCSV",
-    "fieldType": "Textarea"
+    "fieldType": "Textarea",
+    "description": "This case convert Array case to Csv"
   },
   {
-    "label": "CSVToArray",
+    "label": "CSV To Array",
     "functionName": "toCSVToArray",
-    "fieldType": "Textarea"
+    "fieldType": "Textarea",
+    "description": "This case convert Csv case to array"
   }
 ]
