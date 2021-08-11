@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Preview from "../common/Preview";
 import Input from "../common/Input";
 import TextArea from "../common/TextArea";
-import Button from "@components/common/Button";
+import Button from "../common/Button";
 
 function MainConvertion({ converterFunction, currConverter }) {
   const [previewContent, setPC] = useState("");

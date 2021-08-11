@@ -42,6 +42,24 @@ const content2 = {
         },
       },
     },
+    GlossDiwv: {
+      title: "S",
+      GlossList: {
+        GlossEntry: {
+          ID: "SGML",
+          SortAs: "SGML",
+          GlossTerm: "Standard Generalized Markup Language",
+          Acronym: "SGML",
+          Abbrev: "ISO 8879:1986",
+          GlossDef: {
+            para:
+              "A meta-markup language, used to create markup languages such as DocBook.",
+            GlossSeeAlso: ["GML", "XML"],
+          },
+          GlossSee: "markup",
+        },
+      },
+    },
   },
 };
 
@@ -50,18 +68,22 @@ const Template = (args) => <Preview {...args} />;
 export const Normal = Template.bind({});
 Normal.args = {
   content: content1,
+  currConverter: {}
 };
 
 export const Big = Template.bind({});
 Big.args = {
-  content: content2,    
+  content: content2,
+  currConverter: {}    
 };
 
 export const Small = Template.bind({});
 Small.args = {
   content: "Santheep kumar",
+  currConverter: {}
 };
 export const None = Template.bind({});
 None.args = {
   content: " ",
+  currConverter: {}
 };

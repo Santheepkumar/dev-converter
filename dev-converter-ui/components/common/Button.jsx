@@ -4,7 +4,10 @@ function Button(props) {
   if (buttonType === "copy") {
     return (
       <div {...props}>
-        <button className=" bg-gray-800 px-2.5 py-2 border border-gray-400 rounded-md flex space-x-1 hover:bg-white text-white text-xs hover:text-black">
+        <button
+          disabled={props.disabled}
+          className=" bg-gray-800 px-2.5 py-2 border border-gray-400 rounded-md flex space-x-1 hover:bg-white text-white text-xs hover:text-black"
+        >
           <svg
             width="14"
             height="14"
@@ -25,7 +28,10 @@ function Button(props) {
   } else {
     return (
       <div {...props}>
-        <button className=" bg-gray-800 px-2.5 py-2 border border-gray-400 rounded-md flex space-x-1 hover:bg-white text-white text-xs hover:text-black">
+        <button
+          disabled={props.disabled}
+          className=" bg-gray-800 px-2.5 py-2 border border-gray-400 rounded-md flex space-x-1 hover:bg-white text-white text-xs hover:text-black"
+        >
           <svg
             width="18"
             height="18"

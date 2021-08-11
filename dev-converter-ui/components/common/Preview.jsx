@@ -18,6 +18,7 @@ function Preview(props) {
           <Button
             buttonType="download"
             className="absolute -right-2 top-2 mr-4"
+            disabled={content === " "}
             onClick={() => {
               downloadMethods[props.currConverter.download](
                 content,
