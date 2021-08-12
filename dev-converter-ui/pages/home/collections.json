@@ -15,7 +15,7 @@
     "label": "Image to pdf Converter",
     "short": "IC",
     "path": "/image-to-pdf",
-    "description": "Object related converters"
+    "description": "Image related converters"
   }
   
 ]
