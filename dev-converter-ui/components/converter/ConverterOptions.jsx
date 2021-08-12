@@ -4,7 +4,9 @@ import { getColorByKey, getRandomColor } from "../../utils/color.util";
 function ConverterOptions({ converters, setCC, currConverter }) {
   const [show, setShow] = useState(false);
   return (
-    <div className="">
+    <div
+     onClick={() => setShow(!show)}
+    className="">
       <div className="flex justify-center mt-2">
         <button
           type="button"
@@ -32,12 +34,13 @@ function ConverterOptions({ converters, setCC, currConverter }) {
       </div>
 
       {/* Sanjai check this */}
-      <div className="mx-auto w-56 mt-10">
+      <div className="mx-auto w-72  mt-10">
+        
         <label className="text-white ml-8 font-medium text-xl">
           Active Converter
         </label>
-        <div className="text-white mt-2 border border-gray-500 rounded-md">
-          <div className="flex">
+        <div className="text-white mt-2  border border-gray-600 rounded-md">
+          <div className="flex p-2">
             <div
               className="bg-pink-500 py-2 px-4 rounded-md text-3xl"
               style={{
@@ -46,9 +49,14 @@ function ConverterOptions({ converters, setCC, currConverter }) {
             >
               {currConverter.label.slice(0, 1)}
             </div>
-            <h1 className="ml-8 mt-3 text-xl">{currConverter.label}</h1>
+           <div>
+            <h1 className="ml-3 mt-0.5  text-xl">{currConverter.label}</h1>
+           <h1 className=" ml-3 text-sm text-dark-300"> {currConverter.description}</h1>
+
+           </div>
           </div>
         </div>
+      
       </div>
 
       {show && (
@@ -91,7 +99,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                         backgroundColor: getColorByKey(key)
                       }}
                     >
-                      <div className="text-2xl">{con.label.slice(0, 1)}</div>
+                      <div className="text-2xl ">{con.label.slice(0, 1)}</div>
                     </div>
                     <div className="ml-4">
                       <p className="text-base font-medium text-white">

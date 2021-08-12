@@ -12,7 +12,7 @@
     "description": "CSV related converters"
   },
   {
-    "label": "Objecter",
+    "label": "Image to PDF Converter",
     "short": "OB",
     "path": "/image",
     "description": "Object related converters"

@@ -5,7 +5,7 @@ function TextArea({ converterLabel, onChange }) {
         <label>{converterLabel}</label>
       </div>
       <textarea
-        className="p-2 border border-gray-400 rounded-md bg-gray-800 focus:outline-none text-white focus:border-brand-500 w-full"
+        className="p-2 max-h-80 border border-gray-400 rounded-md bg-gray-800 focus:outline-none text-white focus:border-brand-500 w-full"
         rows="8"
         onChange={e => onChange(e.target.value)}
       />
