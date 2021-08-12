@@ -1,8 +1,8 @@
 [
   {
-    "label": "Stringo",
+    "label": "Caser",
     "short": "ST",
-    "path": "/stringo",
+    "path": "/caser",
     "description": "String related converters"
   },
   {
@@ -12,15 +12,10 @@
     "description": "CSV related converters"
   },
   {
-    "label": "Image to PDF Converter",
-    "short": "OB",
-    "path": "/image",
+    "label": "Image to pdf Converter",
+    "short": "IC",
+    "path": "/Image Converter",
     "description": "Object related converters"
-  },
-  {
-    "label": "Numrang",
-    "short": "NR",
-    "path": "/",
-    "description": "Number related converters"
   }
+  
 ]
