@@ -1,6 +1,8 @@
+import Image from "next/image" 
+
 function PdfConverter() {
   return (
-    <div className="text-center  max-w-xl mx-auto">
+    <div className="text-center  max-w-6xl mx-auto">
       <div>
         <button
           type="button"
@@ -24,28 +26,19 @@ function PdfConverter() {
         </button>
       </div>
       <div className="border rounded-2xl border-gray-400 mt-7">
-        <h1 className="mt-5 mr-56 text-lg font-bold text-white">
+        <h1 className="mt-5 mr-56 text-xl  text-white">
           <label>Choose your file</label>
         </h1>
 
-        <div className="mt-5   focus:border-brand-700  w-72 mx-auto">
+        <div className="mt-5   focus:border-brand-700  max-w-4xl mx-auto">
           <div>
             <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-500 border-dashed rounded-md">
               <div className="space-y-1 text-center">
-                <svg
-                  className="mx-auto h-12 w-12 text-dark-300"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 48 48"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+               
+
+               <img
+               href={require("../../components/assets/images/file.png")}
+               />
                 <div className="flex text-sm text-gray-600">
                   <label
                     htmlFor="file-upload"
