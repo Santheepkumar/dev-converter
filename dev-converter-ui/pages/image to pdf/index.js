@@ -1,10 +1,12 @@
-import PdfConverter from "../../components/common/PdfConverter"
-import React from 'react'
 
-export default function index() {
+import PdfConverter from "../../components/common/PdfConverter" 
+
+function index() {
   return (
     <div>
-  <PdfConverter/>
+      <PdfConverter />
     </div>
-  )
+  );
 }
+
+export default index;
