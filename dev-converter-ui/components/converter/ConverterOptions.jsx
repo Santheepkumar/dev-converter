@@ -39,10 +39,10 @@ function ConverterOptions({ converters, setCC, currConverter }) {
         <label className="text-white ml-8 font-medium text-xl">
           Active Converter
         </label>
-        <div className="text-white mt-2  border border-gray-600 rounded-md">
+        <div className="text-white mt-2  border border-gray-650 rounded-md">
           <div className="flex p-2">
             <div
-              className="bg-pink-500 py-2 px-4 rounded-md text-3xl"
+              className="bg-pink-500 py-1.5 px-4 h-12  rounded-md text-3xl"
               style={{
                 backgroundColor: getRandomColor()
               }}
@@ -50,7 +50,7 @@ function ConverterOptions({ converters, setCC, currConverter }) {
               {currConverter.label.slice(0, 1)}
             </div>
            <div>
-            <h1 className="ml-3 mt-0.5  text-xl">{currConverter.label}</h1>
+            <h1 className="ml-3 text-xl">{currConverter.label}</h1>
            <h1 className=" ml-3 text-sm text-dark-300"> {currConverter.description}</h1>
 
            </div>
