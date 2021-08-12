@@ -1,17 +1,13 @@
 function About() {
   return (
     <div className="">
-      <div className="bg-gray-800 border border-dark-400 rounded-2xl">
+      <div className="bg-gray-800   rounded-2xl">
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 ">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
               <h2 className="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
                 Our Team
               </h2>
-              <ul>
-                <li className="text-xl text-gray-100">Santheepkumar </li>
-                <li className="text-xl text-gray-100">Sanjaikumar </li>
-              </ul>
             </div>
             <div className="lg:col-span-2">
               <ul
@@ -37,17 +33,13 @@ function About() {
                       <p className="text-indigo-500">Senior Developer</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-300">
-                        Ultricies massa malesuada viverra cras lobortis. Tempor orci
-                        hac ligula dapibus mauris sit ut eu. Eget turpis urna
-                        maecenas cras. Nisl dictum.
-                      </p>
+                     
                     </div>
 
                     <ul className="flex space-x-5">
                       <li>
                         <a
-                          href="https://tailwindui.com/components/marketing/sections/team-sections#"
+                          href="https://twitter.com/SantheepHoney"
                           className="text-gray-400 hover:text-gray-500"
                         >
                           <span className="sr-only">Twitter</span>
@@ -74,9 +66,9 @@ function About() {
                             aria-hidden="true"
                           >
                             <path
-                              fill-rule="evenodd"
+                            
                               d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                              clip-rule="evenodd"
+                             
                             ></path>
                           </svg>
                         </a>
@@ -99,18 +91,13 @@ function About() {
                       <p className="text-indigo-600">Junior Developer</p>
                     </div>
                     <div className="text-lg">
-                      <p className="text-gray-300">
-                        Turpis lectus et amet elementum. Mi duis integer sed in vitae
-                        consequat. Nam vitae, in felis mi dui tempus. Porta at turpis
-                        eu odio. Et, sed duis in blandit bibendum accumsan. Purus
-                        viverra facilisi suspendisse quis est.
-                      </p>
+                    
                     </div>
 
                     <ul className="flex space-x-5">
                       <li>
                         <a
-                          href="https://tailwindui.com/components/marketing/sections/team-sections#"
+                          href="https://twitter.com/SanjaiKumarv4"
                           className="text-gray-400 hover:text-gray-500"
                         >
                           <span className="sr-only">Twitter</span>
@@ -137,9 +124,9 @@ function About() {
                             aria-hidden="true"
                           >
                             <path
-                              fill-rule="evenodd"
+                             
                               d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                              clip-rule="evenodd"
+                             
                             ></path>
                           </svg>
                         </a>
