@@ -4,9 +4,7 @@ import { getColorByKey, getRandomColor } from "../../utils/color.util";
 function ConverterOptions({ converters, setCC, currConverter }) {
   const [show, setShow] = useState(false);
   return (
-    <div
-     onClick={() => setShow(!show)}
-    className="">
+    <div>
       <div className="flex justify-center mt-2">
         <button
           type="button"
@@ -35,7 +33,6 @@ function ConverterOptions({ converters, setCC, currConverter }) {
 
       {/* Sanjai check this */}
       <div className="mx-auto w-72  mt-10">
-        
         <label className="text-white ml-8 font-medium text-xl">
           Active Converter
         </label>
@@ -49,18 +46,22 @@ function ConverterOptions({ converters, setCC, currConverter }) {
             >
               {currConverter.label.slice(0, 1)}
             </div>
-           <div>
-            <h1 className="ml-3 text-xl">{currConverter.label}</h1>
-           <h1 className=" ml-3 text-sm text-dark-300"> {currConverter.description}</h1>
-
-           </div>
+            <div>
+              <h1 className="ml-3 text-xl">{currConverter.label}</h1>
+              <h1 className=" ml-3 text-sm text-dark-300">
+                {" "}
+                {currConverter.description}
+              </h1>
+            </div>
           </div>
         </div>
-      
       </div>
 
       {show && (
-        <div className="z-10 inset-0 absolute flex justify-center items-center  bg-gray-500 bg-opacity-75 transition-opacity">
+        <div
+          className="z-10 inset-0 absolute flex justify-center items-center  bg-gray-500 bg-opacity-75 transition-opacity"
+          onClick={() => setShow(!show)}
+        >
           <div className="mt-4 mx-auto w-screen max-w-md sm:px-0 lg:max-w-3xl">
             <div className=" rounded-lg shadow-lg ring-1 ring-gray-50 ring-opacity-5 overflow-hidden">
               <div className="relative grid gap-6 bg-gray-800 px-6 py-6 sm:gap-8 sm:p-10 lg:grid-cols-2">
@@ -90,8 +91,11 @@ function ConverterOptions({ converters, setCC, currConverter }) {
                     className={`-m-3 p-3 flex items-start rounded-lg hover:bg-gray-700 transition ease-in-out duration-150
             ${con.functionName === currConverter.functionName && "bg-gray-600"}
           `}
-                    onClick={() => setCC(con)}
-                    onDoubleClick={() => setShow(!show)}
+                    onClick={() => {
+                      setCC(con);
+                      setShow(!show);
+                    }}
+                    // onDoubleClick={() => setShow(!show)}
                   >
                     <div
                       className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white sm:h-12 sm:w-12"
