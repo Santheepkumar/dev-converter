@@ -1,3 +1,5 @@
+import Image from "next/image" 
+
 function About() {
   return (
     <div className="">
@@ -22,9 +24,9 @@ function About() {
                 <li>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
-                      <img
+                      <Image
                         className="object-cover shadow-lg rounded-lg"
-                        src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                        src={require("../assets/images/santheep.png")}
                         alt=""
                       />
                     </div>
@@ -80,9 +82,9 @@ function About() {
                 <li>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
-                      <img
+                      <Image
                         className="object-cover shadow-lg rounded-lg"
-                        src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                        src={require("../assets/images/sanjai.png")}
                         alt=""
                       />
                     </div>
