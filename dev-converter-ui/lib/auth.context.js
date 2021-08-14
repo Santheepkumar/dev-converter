@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth, firestore, googleAuthProvider } from "../lib/firebase";
+import Loader from "../components/common/Loader";
 
 const AuthContext = createContext({});
 
@@ -26,7 +27,13 @@ function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider value={{ ...user, login, logout }}>
-      {!user.loading && children}
+      {!user.loading ? (
+        children
+      ) : (
+        <div className="flex justify-center mt-2">
+          <Loader color={"#ffffff"} loading={user?.loading} size={20} />
+        </div>
+      )}
     </AuthContext.Provider>
   );
 }
