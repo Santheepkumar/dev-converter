@@ -48,29 +48,21 @@ function PdfConverter() {
                  
                   <label
                     htmlFor="file-upload"
-                    className="flex mx-auto  relative px-1 py-0.5 mt-3 cursor-pointer bg-purple-500 rounded-md font-medium text-dark-100 focus-within:outline-none focus-within:ring-2"
+                    className="flex mx-auto  relative px-1 py-0.5 mt-3 cursor-pointer bg-purple-500 rounded-md font-medium text-white focus-within:outline-none focus-within:ring-2"
                   >
                      <svg
                      xmlns="http://www.w3.org/2000/svg" 
-                     
-                     width="24" 
-                     height="24" 
-                     viewBox="0 0 24 24" 
-                     fill="none" 
-                     stroke="currentColor" 
-                     strokewidth="2" 
-                     strokeLinecap="round" 
-                     strokeLinejoin="round" 
-                     className="feather feather-upload m stroke-current text-white"
+                      className="h-7 w-7 mt-1 mb-1  " 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
                     >
-                     <path 
-                      d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
-                     </path>
-                     <polyline points="17 8 12 3 7 8">
-                     </polyline>
-                     <line x1="12" y1="3" x2="12" y2="15"></line>
+                      <path strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                      </svg>
-                     <span className="ml-2 mt-0.5 mr-2">Browse file</span>
+                     <span className="ml-2 mt-2 mr-2">Browse file</span>
                      <input
                       id="file-upload"
                       name="file-upload"
@@ -80,7 +72,7 @@ function PdfConverter() {
                   </label>
                 </div>
                 <p className="text-xs  text-gray-300 pt-5">
-                  PNG, JPG, up to 5MB
+                  PNG,JPG up to 5MB
                 </p>
               </div>
             </div>
@@ -91,7 +83,7 @@ function PdfConverter() {
 
                     <svg 
                      xmlns="http://www.w3.org/2000/svg" 
-                     className="h-7 mt-1 mb-1 w-7 border border-purple-800 outline-none rounded-md bg-purple-800" 
+                     className="h-7 mt-1 mb-1 w-7 border border-purple-500 outline-none rounded-md bg-purple-500" 
                      viewBox="0 0 20 20" 
                      fill="currentColor">
                     <path 
@@ -106,7 +98,7 @@ function PdfConverter() {
         <button className="flex mx-auto px-3 mb-10 py-2 mt-10 focus:outline-none focus:text-brand-700 focus:bg-gray-800  hover:bg-gray-600 hover:border-gray-400 border-gray-500 focus:ring focus:ring-brand-800 font-bold text-base text-white border rounded-lg ">
                     <svg 
                     xmlns="http://www.w3.org/2000/svg" 
-                    className="h-7 w-7 mt-1 mb-1 bg-purple-800 border border-purple-800 rounded-md outline-none" 
+                    className="h-7 w-7 mt-1 mb-1  bg-purple-500 border border-purple-500 rounded-md outline-none" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     stroke="currentColor">
