@@ -12,7 +12,7 @@ function Header() {
           <Link href="/home">
             <Image
               className="block h-5 animate-pulse hover: cursor-pointer "
-              src={require("../assets/images/icon.png")}
+              src={require("../../assets/images/icon.png")}
               alt="converterdev"
               width="200"
               height="60"

@@ -26,7 +26,7 @@ function About() {
                     <div className="aspect-w-3 aspect-h-2">
                       <Image
                         className="object-cover shadow-lg rounded-lg"
-                        src={require("../assets/images/santheep.png")}
+                        src={require("../../assets/images/santheep.png")}
                         alt=""
                       />
                     </div>
@@ -84,7 +84,7 @@ function About() {
                     <div className="aspect-w-3 aspect-h-2">
                       <Image
                         className="object-cover shadow-lg rounded-lg"
-                        src={require("../assets/images/sanjai.png")}
+                        src={require("../../assets/images/sanjai.png")}
                         alt=""
                       />
                     </div>
