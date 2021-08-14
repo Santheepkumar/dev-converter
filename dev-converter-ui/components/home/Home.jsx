@@ -3,7 +3,7 @@ import { getColorByKey } from "../../utils/color.util";
 
 function Home({ collections }) {
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
       <h1 className="font-bold mt-7 text-2xl sm:text-4xl text-gray-100 px-2">
         Converter collections
       </h1>
@@ -35,7 +35,7 @@ function Home({ collections }) {
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

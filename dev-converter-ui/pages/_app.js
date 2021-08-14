@@ -5,12 +5,14 @@ import { AuthProvider } from "@lib/auth.context";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AuthProvider>
+    <>
       <Header />
-      <div className="h-screen">
-        <Component {...pageProps} />
-      </div>
-    </AuthProvider>
+      <AuthProvider>
+        <div className="h-screen max-w-7xl mx-auto">
+          <Component {...pageProps} />
+        </div>
+      </AuthProvider>
+    </>
   );
 }
 

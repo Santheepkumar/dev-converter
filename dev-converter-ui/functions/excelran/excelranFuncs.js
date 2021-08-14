@@ -18,7 +18,7 @@ X.JSONtoCSV = (arr = "[]") => {
   //       : Object.keys(e),
   //   {}
   // );
-  const columns = Object.keys(arr[0])
+  const columns = Object.keys(arr[0] || {})
 
   return [
     columns.join(","),
