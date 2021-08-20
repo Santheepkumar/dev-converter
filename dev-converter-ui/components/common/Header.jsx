@@ -10,15 +10,17 @@ function Header() {
       <div className="mx-auto py-2 px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between flex-wrap">
           <Link href="/home">
-            <Image
-              className="block h-5 animate-pulse hover: cursor-pointer "
+           <Image
+              className="block h-5  animate-pulse hover: cursor-pointer "
               src={require("../../assets/images/icon.png")}
               alt="converterdev"
-              width="200"
-              height="60"
+              width="250"
+              height="70"
             />
           </Link>
-
+        <div>
+         
+        </div>
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <div className="flex">
               <a

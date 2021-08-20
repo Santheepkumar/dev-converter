@@ -74,6 +74,7 @@ function PdfConverter() {
                     className="sr-only"
                   />
                 </label>
+              
               </div>
               <p className="text-xs  text-gray-300 pt-5">PNG,JPG up to 5MB</p>
             </div>
