@@ -10,7 +10,7 @@ function Header() {
       <div className="mx-auto py-2 px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between flex-wrap">
           <Link href="/home">
-           <Image
+            <Image
               className="block h-5  animate-pulse hover: cursor-pointer "
               src={require("../../assets/images/icon.png")}
               alt="converterdev"
@@ -18,9 +18,7 @@ function Header() {
               height="70"
             />
           </Link>
-        <div>
-         
-        </div>
+          <div></div>
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <div className="flex">
               <a
@@ -28,9 +26,12 @@ function Header() {
                 className="flex items-center border-gray-400  justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-50 bg-gray-600 border- hover:text-white
                 focus:outline-none focus:ring focus:ring-brand-100"
               >
-                <Link className="hover:cursor-pointer" href="/about">
+                <a
+                  className="hover:cursor-pointer"
+                  href="https://imaginecoders.vercel.app/"
+                >
                   About as
-                </Link>
+                </a>
               </a>
 
               {user && (
